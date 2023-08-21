@@ -9,7 +9,11 @@ module.exports = {
     './app.{js,ts,vue}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        domainName: ['domainName', 'sans']
+      }
+    }
   },
   plugins: []
 }

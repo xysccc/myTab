@@ -5,3 +5,7 @@
   fill: currentColor;
   overflow: hidden;
 }
+@font-face {
+  font-family: 'domainName';
+  src: url('~/assets/fonts/ShadowsIntoLight-Regular.ttf') format('truetype');
+}
