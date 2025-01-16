@@ -6,13 +6,14 @@
       alt="cover"
       class="fixed -z-10 h-full w-full object-cover"
     />
+
     <!-- 主体区域 -->
     <main
       id="main"
       class="flex h-full w-full flex-col items-center justify-center text-center sm:flex-row"
     >
       <!-- 第一屏 -->
-      <div :class="[{ hidden: isUnfold }, 'info p-6  text-xl sm:block sm:w-1/3 sm:text-base']">
+      <section :class="[{ hidden: isUnfold }, 'info p-6  text-xl sm:block sm:w-1/3 sm:text-base']">
         <div class="flex items-center">
           <!-- 头像 -->
           <img src="../assets/images/head.jpg" alt="" class="m-auto w-1/3 rounded-full sm:w-1/3" />
@@ -75,9 +76,9 @@
             </svg>
           </a>
         </div>
-      </div>
+      </section>
       <!-- 第二屏 -->
-      <div :class="[{ hidden: !isUnfold }, 'info-2 p-6 sm:ml-28 sm:block sm:w-2/5']">
+      <section :class="[{ hidden: !isUnfold }, 'info-2 p-6 sm:ml-28 sm:block sm:w-2/5']">
         <!-- 域名 -->
         <div class="font-domainName text-7xl sm:hidden">shushuTab</div>
         <!-- 随机一言 -->
@@ -132,7 +133,7 @@
             <span class="sm:hidden xl:inline">关于我</span>
           </div>
         </div>
-      </div>
+      </section>
       <!-- 展开按钮 -->
       <div
         class="more Frosted py-6sm:hidden left-1/2 min-w-fit rounded px-4 py-2 sm:hidden"
